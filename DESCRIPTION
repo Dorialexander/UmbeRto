@@ -1,0 +1,20 @@
+Package: AnomalyDetection
+Type: Package
+Title: Detection of anomalous events in web logs data.
+Version: 0.1.0
+Author: Pierre-Carl Langlais
+Maintainer: Pierre-Carl Langlais <yourself@somewhere.net>
+Description: A robust model to extract anomalous deviations of log history using Rubic Cubic Spline from rms.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+	dplyr,
+	tidyr,
+  rms,
+  Hmisc,
+  broom
+RoxygenNote: 6.1.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
