@@ -1,0 +1,22 @@
+Package: UmbeRto
+Type: Package
+Title: Detection of anomalous events in web logs data.
+Version: 0.1.0
+Author: Pierre-Carl Langlais
+Maintainer: Pierre-Carl Langlais <yourself@somewhere.net>
+Description: A robust model to extract anomalous deviations of log history using Rubic Cubic Spline from rms.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends:
+	R (>= 3.3.0)
+Imports:
+	dplyr (>= 0.7.0),
+	tidyr (>= 1.0.0),
+  rms (>= 5.1-0),
+  Hmisc (>= 4.0-3),
+  broom (>= 0.4.0)
+RoxygenNote: 6.1.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
