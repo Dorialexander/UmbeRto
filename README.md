@@ -19,6 +19,8 @@ cleaned_anomalies = um_clean(complete_anomalies, document, current_hour, count_v
 cleaned_anomalies = um_clean(complete_anomalies, article, day, visits)
 ```
 
+**um_clean** outputs a normalized dataset that can be used by **um_model**. Especially, the time variable has been supplemented with a standardized time sequency that starts at the first apparition of the document in the logs.
+
 UmbeRto has been developed for day-level values but should normally perform with other time units.
 
 UmbeRto works usually better with unique visitors since multiple visits from the same visitor can be wrongly accounted as a sudden "surge" in traffic.
