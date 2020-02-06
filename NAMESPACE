@@ -1,5 +1,0 @@
-exportPattern("^[[:alpha:]]+")
-import(dplyr)
-importFrom("rms", "rcs")
-importFrom("Hmisc", "rcspline.eval")
-importFrom("broom", "augment")
