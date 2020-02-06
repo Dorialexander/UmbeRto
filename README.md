@@ -9,6 +9,7 @@ UmbeRto can be installed using
 devtools::install_github("Dorialexander/UmbeRto")
 ```
 ##Cleaning the log corpus
+
 The function **um_clean** transform any set of logs aggregated by documents and by a time variable into a dataset that can be used by **um_model**. The function uses non-standard evaluation, so any column name can be used as an input.
 
 ```
@@ -23,6 +24,7 @@ UmbeRto has been developed for day-level values but should normally perform with
 UmbeRto works usually better with unique visitors since multiple visits from the same visitor can be wrongly accounted as a sudden "surge" in traffic.
 
 ##Modeling the anomalies
+
 The function **um_model** takes a dataset normalized by **um_clean** to identify the anomalous event for each time series associated to the document. The underlying RCS model can be customized by adding more "knots", that is more precision to the model at the expense of added complexity and more risks of overfitting and missing anomalous events. It is also possible to change the min number of observations necessary to integrate a time sequence into the model.
 
 ```
