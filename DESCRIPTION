@@ -15,7 +15,8 @@ Imports:
 	tidyr (>= 1.0.0),
   rms (>= 5.1-0),
   Hmisc (>= 4.0-3),
-  broom (>= 0.4.0)
+  broom (>= 0.4.0),
+  rlang (>= 0.2.0)
 RoxygenNote: 6.1.1
 Suggests: knitr,
     rmarkdown
