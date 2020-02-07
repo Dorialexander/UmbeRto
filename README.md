@@ -40,7 +40,7 @@ UmbeRto works usually better with unique visitors since multiple visits from the
 
 ## Modeling the anomalies
 
-The function um_model takes a dataset normalized by um_clean to identify the anomalous event for each time series associated to the document. The underlying RCS model can be customized by adding more "knots", that is more precision to the model at the expense of added complexity and more risks of overfitting and missing anomalous events. It is also possible to change the min number of observations necessary to integrate a time sequence into the model.
+The function **um_model** takes a dataset normalized by **um_clean** to identify the anomalous event for each time series associated to the document. The underlying RCS model can be customized by adding more "knots", that is more precision to the model at the expense of added complexity and more risks of overfitting and missing anomalous events. It is also possible to change the min number of observations necessary to integrate a time sequence into the model.
 
 ```
 um_model(log_data, knots = 3, min_observations = 7, min_anomaly_ratio = 5)
