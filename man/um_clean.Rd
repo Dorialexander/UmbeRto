@@ -11,13 +11,13 @@ um_clean(log_data, document, time_variable, count_log)
 
 \item{document}{The exact name of the document column.}
 
-\item{count_log}{The exact name of the aggregated logs column.}
+\item{time_variable}{The exact name of the date of records column.}
 
-\item{time_sequence}{The exact name of the date of records column.}
+\item{count_log}{The exact name of the aggregated logs column.}
 }
 \description{
 A function to retrieve the anomalies using rds.
 }
 \examples{
- um_clean(log_data, document, recorded_date, logs)
+ um_clean(log_data, document, time_variable, count_log)
 }

@@ -4,11 +4,11 @@
 \alias{um_model}
 \title{A function to retrieve the anomalies using rds.}
 \usage{
-um_model(log_data, knots = 3, min_observations = 7,
+um_model(clean_log_data, knots = 3, min_observations = 7,
   min_anomaly_ratio = 5)
 }
 \arguments{
-\item{log_data}{A dataset of logs aggregated by publications and per days.}
+\item{clean_log_data}{A dataset of logs aggregated by publications and per days already cleaned by um_clean}
 
 \item{knots}{The number of knots fitted to the knots. By default 3. A larger value may better fit log data with a long/complicated history, at the expense of being to overfitted to anomalous episode.}
 
@@ -20,5 +20,5 @@ um_model(log_data, knots = 3, min_observations = 7,
 A function to retrieve the anomalies using rds.
 }
 \examples{
- um_model(log_data, knots = 3, min_observations = 7, min_anomaly_ratio = 5)
+ um_model(clean_log_data, knots = 3, min_observations = 7, min_anomaly_ratio = 5)
 }
